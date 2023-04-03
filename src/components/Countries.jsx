@@ -15,7 +15,7 @@ function Countries({ data }) {
           } = item;
           return (
             <Link to={`/about/${code}`} key={code}>
-              <div className="hover:shadow-2xl dark:hover:shadow-slate-500 w-60 bg-white shadow-lg rounded-xl dark:bg-slate-400 dark:text-white">
+              <div className="hover:shadow-2xl dark:hover:shadow-slate-500 w-60 bg-slate-50 shadow-lg rounded-xl dark:bg-slate-400 dark:text-white">
                 <img
                   src={svg}
                   className="rounded-xl w-60 border-2 border-slate-500 h-32 mb-3"
