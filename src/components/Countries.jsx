@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Countries({ data }) {
   return (
-    <div className="max-w-4xl mx-auto px-10 py-6 grid md:grid-cols-3 gap-8 sm:grid-cols-2 content-center justify-items-center dark:bg-slate-700">
+    <div className=" max-w-4xl mx-auto px-10 py-6 grid md:grid-cols-3 gap-8 sm:grid-cols-2 content-center justify-items-center dark:bg-slate-700">
       {data &&
         data.map((item) => {
           const {
@@ -15,7 +15,7 @@ function Countries({ data }) {
           } = item;
           return (
             <Link to={`/about/${code}`} key={code}>
-              <div className="w-60 bg-white shadow-lg rounded-xl dark:bg-slate-400 dark:text-white">
+              <div className="hover:shadow-2xl dark:hover:shadow-slate-500 w-60 bg-white shadow-lg rounded-xl dark:bg-slate-400 dark:text-white">
                 <img
                   src={svg}
                   className="rounded-xl w-60 border-2 border-slate-500 h-32 mb-3"
