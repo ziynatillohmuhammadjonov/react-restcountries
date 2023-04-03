@@ -51,11 +51,11 @@ function useFetch(url) {
           setData(newArr);
         }
       }
-      // const userCountry = filter.toLowerCase();
-      // const newArr = mainData.filter((cr) => {
-      //   return cr.name.common.toLowerCase().includes(userCountry);
-      // });
-      // setData(newArr);
+      const userCountry = filter.toLowerCase();
+      const newArr = mainData.filter((cr) => {
+        return cr.name.common.toLowerCase().includes(userCountry);
+      });
+      setData(newArr);
     }
   }
   useEffect(() => {
